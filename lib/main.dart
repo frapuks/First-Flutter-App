@@ -7,10 +7,17 @@ void main() {
         appBar: AppBar(
           title: const Text('I am poor'),
         ),
-        body: const Center(
-          child: Image(
-            image: NetworkImage(
-                'https://avatars.githubusercontent.com/u/100098420?v=4'),
+        body: Center(
+          child: Column(
+            children: const <Widget>[
+              Image(
+                image: NetworkImage(
+                    'https://avatars.githubusercontent.com/u/100098420?v=4'),
+              ),
+              Image(
+                image: AssetImage('images/gaetan.jpg'),
+              ),
+            ],
           ),
         ),
       ),
